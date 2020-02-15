@@ -1,2 +1,2 @@
 # Hypermedia
-Ist sll about the links
+It's all about the links
