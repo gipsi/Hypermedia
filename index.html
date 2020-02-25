@@ -1,21 +1,60 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-  <title>Hypermedia</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-   <link rel="stylesheet" href="style.css" />
+  <title>Welcome Home</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
+  p {
+    text-align: center;
+  }
+  a {
+  padding: 5px;
+  }
   </style>
-  </head>
-  <body>
+</head>
+
+<body>
   <header>
-      <img src="undraw_donut_love_kau1.png" alt="Hello entities" style="width:90%">
-  </header>
-  <h1>Hypermedia</h1>
-  <h2><a href="https://dev.w3.org/html5/html-author/charref">Hello entities!</a></h2>
-  <p>Links and nodes, (or anchors) are the basic building blocks of <a href="hypertext.html">hypertext</a>.</p>
+  <img src="media/images/undraw_welcome_cats_thqn(2).png" alt="Welcome Cats" style="width:90%">
+    </header>
+    <h3>Welcome to a Static Site with Data from a Go API</h3>
+      <button><a href="pages/hypermedia.html">start hypermedia tour &raquo;</a>
+      </button>
+      <h2>Source <a href="https://github.com/gipsi/hypermedia" target="_blank" rel="noreferrer noopener"> GitHub </a></h2>
+  <h2>
+    Deployed with
+    <a href="https://=zeit.co/docs" target="_blank" rel="noreferrer noopener">ZEIT Now</a>!
+  </h2>
+  
+  <p>
+    <a href="https://github.com/zeit/now-examples/blob/master/vanilla-functions" target="_blank" rel="noreferrer noopener">This project</a>
+    was seeded with three files. A static <code>index.html</code> file as the
+    homepage, a static <code>style.css</code> file for styling, and a
+    <code>api/date.go</code> serverless function that returns the date on
+    invocation. See
+    <a href="/api/date.go"><code>api/date.go</code> for the Date API with Go</a>.
+  </p>
+  <br />
+  <h3>The date according to Go is:</h3>
+  <p class="date">Loading date...</p>
+  
   <footer>
+    <button class="enclose problem"><a href="index.html">  home </a></button>
   </footer>
+ 
+  <script>
+    function main() {
+      return fetch('/api/date.go')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(date) {
+          document.querySelector('.date').textContent = date;
+        });
+    }
+    main();
+  </script>
 </body>
 
 </html>
-
