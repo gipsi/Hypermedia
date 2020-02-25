@@ -8,7 +8,7 @@ body {
   align-content: center;
   min-height: 100vh;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.65;
   word-break: break-word;
   font-kerning: auto;
@@ -58,10 +58,37 @@ code:after {
 
 p {
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 li {
   text-align: left;
   font-size: 18px;
 }
+button {
+background: white; 
+font-size: 32px;
+    border: 1px dotted #999999;
+    border-radius: 1em;
+    box-shadow: 3px 4px 0px 0px #899599;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.problem {
+  text-align: center
+}
+
+.enclose {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+
