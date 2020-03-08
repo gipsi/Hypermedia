@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">	
-  <title>Welcome Home</title>
-  <link rel="stylesheet" href="style.css" />
 
- <!-- <link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Oldstyle" type="text/css"> -->
-  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Hypermedia</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Oldstyle" type="text/css">
 </head>
 
 <body>
   <header>
-  <img src="media/images/undraw_welcome_cats_thqn.png" alt="Welcome Cats" style="width:90%">
-    </header>
-    <h3>Welcome to a Static Site with Data from a Go API</h3>
-     <h2>Start <a href="pages/hypermedia.html">hypermedia tour &raquo;</a></h2>
-      <h2>Source <a href="https://github.com/gipsi/hypermedia" target="_blank" rel="noreferrer noopener"> GitHub </a></h2>
-    <h2>
-    Deployed with
-      <a href="https://=zeit.co/docs" target="_blank" rel="noreferrer noopener">ZEIT Now</a>!
-    </h2>
+    <img src="media/images/undraw_donut_love_kau1.png" alt="Hello entities" style="width:90%">
+	<h1>Hypermedia - <a href="https://dev.w3.org/html5/html-author/charref">Hello, entities!</a>*</h1>
+  </header>
   
-    <p>
-      <a href="https://github.com/zeit/now-examples/blob/master/vanilla-functions" target="_blank" rel="noreferrer noopener">This project</a>
-    was seeded with three files. A static <code>index.html</code> file as the
-    homepage, a static <code>style.css</code> file for styling, and a
-    <code>api/date.go</code> serverless function that returns the date on
-    invocation. See
-      <a href="/api/date.go"><code>api/date.go</code> for the Date API with Go</a>.
-    </p>
+  <h3>The medium that's the internet.</h3>
+  
+  <p>It's all about the links!</p>
+   
+  <p>Allowing access to all kinds of information like the W3.org Character Entity Reference Chart.*</p>
+  
+  
+  <ul>
+  <li>Go to <a href="pages/hypertext.html">hypertext &raquo;</a></li>
+  <li>Back to <a href="https://vanilla.gipsi.now.sh">&laquo; welcome</a></li>
+  </ul>
+ 
+   <p>Hyperlinks, that is, links and nodes, <i>anchors</i>, are the basic building blocks.
+   </p>
+   
+  
+  <footer>
+    Go back<a href="https://vanilla.gipsi.now.sh"> &laquo; home </a>
+  </footer>
 
-<!--
-  <h3>The date according to Go is:</h3>
-  <p class="date">Loading date...</p>
---> 
-    <footer>
-      <h3>Go up<a href="index.html">&circ; home &circ; </a></h3>
-    </footer>
-<!-- 
-  <script>
-    function main() {
-      return fetch('/api/date.go')
-        .then(function(response) {
-          return response.text();
-        })
-        .then(function(date) {
-          document.querySelector('.date').textContent = date;
-        });
-    }
-    main();
-  </script>
 </body>
-
 </html>
--->
